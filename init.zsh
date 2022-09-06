@@ -1,8 +1,4 @@
-#
-# Custom aliases/settings
-#
-
-# any custom stuff should go here.
-# ensure that 'custom' exists in the zmodules array in your .zimrc
-
-
+if (( $+commands[zoxide] )); then
+    $commands[zoxide] init zsh >| ${0:A:h}/zoxide.zsh
+    source ${0:A:h}/zoxide.zsh
+fi
