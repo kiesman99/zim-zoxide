@@ -1,19 +1,17 @@
-custom
-======
+# zim-zoxide
 
-Add any custom aliases/settings to the `init.zsh` file.
+Custom [zim-module](https://github.com/zimfw/zimfw) for [zoxide](https://github.com/ajeetdsouza/zoxide).
 
-Any functions should go in the `functions` subdirectory, where the name of the
-file is the name of the function.
+## Prerequisites
 
-For example, this function from your `.zshrc`:
-```zsh
-foo() {
-  print 'bar'
-}
-```
+You need to have [zoxide](https://github.com/ajeetdsouza/zoxide) installed.
 
-becomes a file named `foo` in the `functions` subdirectory containing:
-```zsh
-print 'bar'
+## Install
+
+Add the following to `~/.zimrc`
+
+```sh
+# some configuration above
+zmodule kiesman99/zim-zoxide
+# some configuration below
 ```
